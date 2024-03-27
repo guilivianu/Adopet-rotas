@@ -15,9 +15,6 @@ export default function Mensagem() {
   const [telefone, onChangeTelefone] = React.useState("");
   const [mensagem, onChangeMensagem] = React.useState("");
 
-  const rota = useRoute();
-  const { nomePet } = rota.params;
-
   return (
     <View style={styles.container}>
       <ScrollView>
