@@ -2,11 +2,14 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
+//Imports páginas
 import Home from "../paginas/Home";
 import Login from "../paginas/Login";
 import Cadastro from "../paginas/Cadastro";
 import ListaPets from "../paginas/ListaPets";
 import Mensagem from "../paginas/Mensagem";
+import Sobre from "../paginas/Sobre";
+
 import { Image } from "react-native";
 
 const Stack = createStackNavigator();
@@ -54,6 +57,7 @@ export default function Navigation() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Cadastro" component={Cadastro} />
         <Stack.Screen name="Tab" component={TabRoutes} />
+        <Stack.Screen name="Sobre" component={Sobre} />
       </Stack.Navigator>
     </NavigationContainer>
   );
