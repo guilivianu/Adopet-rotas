@@ -30,6 +30,7 @@ export default function Navigation() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Cadastro" component={Cadastro} />
+        <Stack.Screen name="Tab" component={TabRoutes} />
       </Stack.Navigator>
     </NavigationContainer>
   );
