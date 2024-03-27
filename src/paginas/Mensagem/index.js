@@ -8,11 +8,15 @@ import {
   TouchableOpacity,
 } from "react-native";
 import PaginaBase from "../PaginaBase";
+import { useRoute } from "@react-navigation/core";
 
 export default function Mensagem() {
   const [nome, onChangeNome] = React.useState("");
   const [telefone, onChangeTelefone] = React.useState("");
   const [mensagem, onChangeMensagem] = React.useState("");
+
+  const rota = useRoute();
+  const { nomePet } = rota.params;
 
   return (
     <View style={styles.container}>
